@@ -6,6 +6,7 @@ import { HeaderComponent } from "./header/header.component";
 import { HeroComponent } from "./hero/hero.component";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
     declarations: [
@@ -17,7 +18,7 @@ import { RouterModule } from "@angular/router";
     ],
     imports: [
         CommonModule,
-        RouterModule
+        RouterModule,
     ],
     exports: [
        CardsComponent,
