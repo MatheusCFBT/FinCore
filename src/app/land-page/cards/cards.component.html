@@ -1,0 +1,17 @@
+<div class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let card of [
+      { img: 'assets/real-time-insights.jpg', title: 'Real-time Insights', text: 'Track your finances with real-time data and analytics to make informed decisions.' },
+      { img: 'assets/secure-platform.jpg', title: 'Secure Platform', text: 'Your financial data is protected with industry-leading security measures.' },
+      { img: 'assets/growth-opportunities.jpg', title: 'Growth Opportunities', text: 'Explore investment options and strategies to grow your wealth effectively.' }
+    ]" [@fadeInUp]>
+      <div class="card h-100 shadow-sm hover-card">
+        <img [src]="card.img" class="card-img-top" [alt]="card.title">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ card.title }}</h5>
+          <p class="card-text">{{ card.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
